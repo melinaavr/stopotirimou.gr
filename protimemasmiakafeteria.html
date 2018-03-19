@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stopotirimou</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <style>
+    p.Helvetica {
+          font-family: "Helvetica";
+            }
+
+    p.sansserif {
+          font-family:Helvetica;
+                }
+    </style>
+
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marker Clustering</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+<style>
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 30;
+    font-family: Helvetica;
+
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30;
+    font-family: Helvetica;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 30;
+    font-family: Helvetica;
+    
+}
+</style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container" style="padding-right: 0; padding-left: 0; max-width: 100%;">
+       
+        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">BringYourOwnCup</a>-->
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+         <a class="navbar-brand" href="#"> <img src="my cup_final-07.png" width="100" height="100"></a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">O Χαρτης</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Τι κανουμε</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Γιατι ειναι<br>σημαντικο</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="index.html">Μαζι θα<br> το πετυχουμε!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <br>       </br>
+<br>       </br>
+
+    <br>       </br>
+    <br>       </br>
+<h2 class="text-center text-uppercase text-secondary mb-0">προτεινε μας μια καφετερια</h2>
+<div class="text-center">
+<p   class="Helvetica" 
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">
+                      <font class="text-center">
+                Σημπλήρωσε τη φόρμα και πρότεινέ μας μια καφετέρια για να μπεί στο χάρτη!!
+              </font>
+            </font>
+          </font>
+        </p>
+        </div>
+<center>
+  <form action="https://formspree.io/info@stopotirimou.gr" method="POST">
+   Όνομα:<br>
+  <input type="text" name="firstname">
+  <br>
+
+    Eπίθετο:<br>
+    <input type="text" id="lname" name="lastname">
+      </br>
+
+    Τηλέφωνο<br>
+    <input type="text" id="phone" name="phone">
+    </br>
+    
+    E-mail<br>
+    <input type="text" id="email" name="email">
+    </br>
+    Το όνομα της καφετέριας<br>
+    <input type="text" id="cname" name="cname">
+    </br>
+    Διεύθυνση<br>
+    <input type="text" id="location" name="location">
+    </br>
+    
+
+    <input type="submit" value="Αποστολή">
+  </form>
+</center>
+<br>        </br>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Επικοινωνια</h4>
+            <p class="lead mb-0">Κολωνού 78, Αθήνα 104 37
+              <br>Τηλέφωνο: 21 0384 0774
+              <br> e-mail: info@stopotirimou.gr </p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Ακολουθηστε μας</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/greenpeace.gr/">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/greenpeace_greece/?hl=el">
+                  <i class="fa fa-fw fa-instagram"></i>
+                </a>
+              </li>
+              
+            </ul>
+            <br>    </br>
+
+            <div><p style="font-family: Helvetica">www.greenpeace.gr</p></div>
+            
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Ποιοι ειμαστε</h4>
+            <p class="lead mb-0">Είμαστε οι εθελοντές της Greenpeace από όλη την Ελλάδα. Πιστεύουμε ότι ενωμένοι μπορούμε να κάνουμε αυτόν τον πλανήτη ένα καλύτερο μέρος για όλους, για αυτό και ξεκινάμε αλλάζοντας τις καθημερινές μας συνήθειες και δίνοντας το καλό παράδειγμα.
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small><p style="font-family:Helvetica;"> Greenpeace Greece Εθελοντές </small> </p>
+      </div>
+    </div>
+
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
+
+</html>
